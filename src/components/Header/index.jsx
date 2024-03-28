@@ -32,7 +32,7 @@ export default function Header({ ...props }) {
           <Heading as="h6" className="text-center">
             Property{" "}
           </Heading>
-          <Heading as="h6">Blog</Heading>
+          <Heading as="h6"><a href="/aboutus">About</a></Heading>
         </div>
         <div className="flex flex-row justify-start items-center w-[19%] md:w-full gap-2.5">
           <Input
