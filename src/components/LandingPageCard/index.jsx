@@ -8,8 +8,8 @@ export default function LandingPageCard({
   bathcounter = "1 Bath",
   sqftcounter = "1,032 sqft",
   p1bath = "Family",
-  viewDetails = "View Details",
-  price = "$649,900",
+  viewDetails = "Get Quote",
+  price = "Call Now",
   ...props
 }) {
   return (
@@ -55,13 +55,14 @@ export default function LandingPageCard({
               </div>
             </div>
           </div>
-          <div className="flex flex-row justify-between items-center w-full pr-[47px] md:pr-5">
+          <div className="flex flex-row justify-between items-center w-full  md:pr-5">
             <Button className="h-[48px] px-[31px] sm:px-5 text-white-A700 text-base font-semibold bg-gray-900 min-w-[156px] rounded-[10px]">
               {viewDetails}
             </Button>
-            <Heading size="2xl" as="h6" className="tracking-[-0.48px]">
+            <Button className="h-[48px] px-[31px] sm:px-5 text-white-A700 text-base font-semibold bg-gray-900 min-w-[156px] rounded-[10px]">
               {price}
-            </Heading>
+            </Button>
+            
           </div>
         </div>
       </div>

@@ -12,6 +12,36 @@ body {
 a {
   display: block;
 }
+a:hover{
+  color: #C5A052;
+}
+.bg{
+  background-color: #191919;
+}
+.c1{
+  color: #C5A052;
+  font-family: "Orbitron", sans-serif;
+  font-size: 30px;
+}
+.c2{
+  color: #fff;
+  font-family: "Orbitron", sans-serif;
+  font-size: 30px;
+}
+.c3{
+  color: #fff;
+  font-family: "Orbitron", sans-serif;
+  font-size: 16px;
+}
+.padd{
+  padding-left: 15px;
+}
+.padd1{
+  padding-bottom: 18rem;
+}
+.c4{
+  color: #FFE0CE;
+}
 ul {
   margin: 0;
   margin-inline: unset;
@@ -53,5 +83,13 @@ input:focus {
   }
   to {
     opacity: 1;
+  }
+}
+@media screen and (max-width: 600px){
+  .c3{
+    font-size: 14px;
+  }
+  .padd1{
+    padding-bottom:1rem ;
   }
 }
