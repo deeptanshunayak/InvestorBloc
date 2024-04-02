@@ -9,7 +9,7 @@ export default function LandingPagePage() {
   return (
     <>
       <Helmet>
-        <title>Deeptanshu's Application2</title>
+        <title>Investorbloc</title>
         <meta name="description" content="Web site created using create-react-app" />
       </Helmet>
       <div className="flex flex-col items-center justify-start w-full gap-[99px] overflow-auto bg">
@@ -354,9 +354,9 @@ export default function LandingPagePage() {
                 <div className="flex flex-col items-start justify-start w-full gap-7">
                   <Heading as="h6" className="!leading-[160%]">
                     <>
-                      59 Bervely Hill Ave, Brooklyn Town,
+                      Haryana
                       <br />
-                      New York, NY 5630, CA, US
+                     
                     </>
                   </Heading>
                   <div className="flex flex-col items-start justify-center gap-2">

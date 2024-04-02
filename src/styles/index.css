@@ -93,3 +93,8 @@ input:focus {
     padding-bottom:1rem ;
   }
 }
+@media screen and (max-width: 370px){
+.c3{
+  font-size: small;
+}
+}

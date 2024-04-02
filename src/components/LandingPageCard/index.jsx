@@ -58,7 +58,7 @@ export default function LandingPageCard({
           <div className="flex flex-row justify-between items-center w-full  md:pr-5">
             <Button className="h-[48px] px-[31px] sm:px-5 text-white-A700 text-base font-semibold bg-gray-900 min-w-[156px] rounded-[10px]">
               {viewDetails}
-            </Button>
+            </Button>&nbsp;&nbsp;
             <Button className="h-[48px] px-[31px] sm:px-5 text-white-A700 text-base font-semibold bg-gray-900 min-w-[156px] rounded-[10px]">
               {price}
             </Button>
