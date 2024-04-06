@@ -1,11 +1,20 @@
-import React from "react";
+import React,{ useEffect, useState } from "react";
 import { Helmet } from "react-helmet";
 import { Heading, Img, Text, Button, Input } from "../../components";
 import Header from "../../components/Header";
 import LandingPageCard from "../../components/LandingPageCard";
 
-
+const images =["images/layout.svg","images/img1.svg","images/img3.svg","images/img4.svg"];
 export default function LandingPagePage() {
+  const [currentImage, setCurrentImage] = useState(null);
+  useEffect(() => {
+    const intervalId = setInterval(() => {
+        setCurrentImage(images[Math.floor(Math.random() * images.length)]);
+    }, 800)
+    
+    return () => clearInterval(intervalId);
+}, []);
+
   return (
     <>
       <Helmet>
@@ -14,7 +23,7 @@ export default function LandingPagePage() {
       </Helmet>
       <div className="flex flex-col items-center justify-start w-full gap-[99px] overflow-auto bg">
         <div className="flex flex-col items-center justify-start w-full">
-        <img src="images/logo (2).svg"></img>
+        <img src="images/logo (2).svg" alt="logo" className="zoome"></img>
           <Header className="flex justify-center items-center w-full md:h-auto p-[11px] bg" />
           <div className="flex flex-row justify-end w-full py-[20px] md:py-5 bg">
             <div className="flex flex-row md:flex-col justify-between items-center w-full mx-auto md:gap-10 md:px-3 max-w-[1396px]">
@@ -22,9 +31,9 @@ export default function LandingPagePage() {
                 <div className="flex flex-col items-center justify-start w-full gap-[15px]">
                   <Heading size="5xl" as="h1" className="tracking-[-0.92px] padd1">
                     <>
-                      <p className="c2">We treat your property</p>
+                      <p className="c2 fade-in">We treat your property</p>
                       
-                      <p className="c1">as A PALACE</p>
+                      <p className="c1 fade-in">as A PALACE</p>
                     </>
                   </Heading>
                   <Text size="md" as="p">
@@ -34,7 +43,9 @@ export default function LandingPagePage() {
                
               </div>
               <div className="flex flex-row justify-start">
-                <Img src="images/layout.svg" alt="image_one" className="w-[89%] md:h-auto sm:w-full object-cover" />
+                <Img src={currentImage} alt="image_one" className="w-[89%] md:h-auto sm:w-full object-cover"/>
+               
+                
               </div>
             </div>
           </div>
@@ -43,10 +54,10 @@ export default function LandingPagePage() {
           <div className="flex flex-row md:flex-col justify-start w-full gap-6 md:gap-5 md:px-5 max-w-[1200px]">
             <div className="flex flex-col items-start justify-center w-[49%] md:h-auto gap-[49px] p-[50px] md:p-5 bg-red-100 rounded-[20px] sm:w-full">
               <div className="flex flex-col items-center justify-start mt-[23px] gap-[15px]">
-                <Heading size="4xl" as="h2" className="tracking-[-0.72px]">
+                <Heading size="4xl" as="h2" className="tracking-[-0.72px] fade-in">
                   Simple & easy way to find your dream Appointment
                 </Heading>
-                <Text as="p" className="!text-gray-900">
+                <Text as="p" className="!text-gray-900 fade-in">
                   Lorem Ipsum is simply dummy text of the printing and typesetting industry.{" "}
                 </Text>
               </div>
@@ -66,7 +77,7 @@ export default function LandingPagePage() {
               </div>
               <div className="flex flex-col items-start justify-center w-full md:h-auto gap-5 p-[30px] sm:p-5 bg-deep_orange-50 rounded-[20px]">
                 <Img src="images/img_eye.svg" alt="eye_one" className="h-[30px] w-[30px] mt-[7px]" />
-                <Heading size="3xl" as="h4" className="mb-[7px] tracking-[-0.56px]">
+                <Heading size="3xl" as="h4" className="mb-[7px] tracking-[-0.56px] fade-in">
                   <>
                     Visit <br />
                     Appointment
@@ -75,7 +86,7 @@ export default function LandingPagePage() {
               </div>
               <div className="flex flex-col items-start justify-center w-full md:h-auto gap-5 p-[30px] sm:p-5 bg-deep_orange-50 rounded-[20px]">
                 <Img src="images/img_wallet.svg" alt="wallet_one" className="h-[30px] w-[30px] mt-[7px]" />
-                <Heading size="3xl" as="h5" className="mb-[7px] tracking-[-0.56px]">
+                <Heading size="3xl" as="h5" className="mb-[7px] tracking-[-0.56px] fade-in">
                   <>
                     Get your <br />
                     dream house
@@ -84,7 +95,7 @@ export default function LandingPagePage() {
               </div>
               <div className="flex flex-col items-start justify-center w-full md:h-auto gap-5 p-[30px] sm:p-5 bg-deep_orange-50 rounded-[20px]">
                 <Img src="images/img_emoji_happy.svg" alt="emojihappy_one" className="h-[30px] w-[30px] mt-[7px]" />
-                <Heading size="3xl" as="h6" className="mb-[7px] tracking-[-0.56px]">
+                <Heading size="3xl" as="h6" className="mb-[7px] tracking-[-0.56px] fade-in">
                   <>
                     Enjoy your <br />
                     Appointment
@@ -288,7 +299,7 @@ export default function LandingPagePage() {
         <div className="flex flex-row justify-center w-full px-14 py-[120px] md:p-5 bg-gray-400">
           <div className="flex flex-col items-center justify-start w-full gap-[118px] max-w-[1200px]">
             
-            <div className="flex flex-col items-center justify-start w-full gap-[30px] p-10 sm:p-5 bg-gray-400_01 rounded-[10px]">
+            <div className="flex flex-col items-center justify-start w-full gap-[30px] p-10 sm:p-5 bg-gray-600_01 rounded-[10px]">
               <div className="flex flex-col items-center justify-start w-[54%] md:w-full pt-[3px] gap-[5px]">
                 <Heading size="3xl" as="h3" className="tracking-[-0.56px] text-center">
                   For Recent Update, News.

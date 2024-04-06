@@ -18,20 +18,20 @@ export default function Header({ ...props }) {
           <div className="flex flex-row w-[94%] sm:w-full gap-10">
           
             <div className="flex flex-row justify-center items-start w-[25%] gap-1.5">
-              <Heading as="h6" className="c3">< a href="/">Home</a></Heading>
+              <Heading as="h6" className="c3 fade-in">< a href="/">Home</a></Heading>
               
             </div>
             
             <div className="flex flex-row justify-center items-start w-[25%] gap-1.5">
-              <Heading as="h6" className="c3"><a href="/aboutus">About Us</a></Heading>
+              <Heading as="h6" className="c3 fade-in"><a href="/aboutus">About Us</a></Heading>
               
             </div>
             <div className="flex flex-row justify-center items-start w-[35%] ">
-              <Heading as="h6" className="c3">< a href="">Elite Services</a></Heading>
+              <Heading as="h6" className="c3 fade-in">< a href="">Elite Services</a></Heading>
               
             </div>
             <div className="flex flex-row justify-center items-start w-[35%] ">
-              <Heading as="h6" className="c3">< a href="">Contact Us</a></Heading>
+              <Heading as="h6" className="c3 fade-in">< a href="">Contact Us</a></Heading>
               
             </div>
           </div>
