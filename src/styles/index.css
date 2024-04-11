@@ -129,11 +129,23 @@ a:hover{
   top: 70%;
   left: 0;
   color: #FFD47E;
-  font-size: 58px;
+ 
   padding-left: 50px;
   font-family: "Orbitron", sans-serif;
   font-weight: 900;
 }
+.abs1{
+  font-size: 58px;
+}
+.paddd{
+  margin: 20px !important;
+}
+.abs2{
+  color: #fff;
+  font-size: 24px;
+  font-weight: 400;
+}
+
 ul {
   margin: 0;
   margin-inline: unset;
@@ -203,13 +215,27 @@ input:focus {
   }
   .abs{
     position: absolute;
-    top: 47%;
+    top: 37%;
     left: 0;
     color: #FFD47E;
     font-size: 18px;
     padding-left: 50px;
     font-family: "Orbitron", sans-serif;
     font-weight: 900;
+  }
+  .abs1{
+    font-size: 18px;
+  }
+  .paddd{
+    margin: 20px !important;
+  }
+  .abs2{
+    color: #fff;
+    font-size: 14px;
+    font-weight: 400;
+  }
+  .wider{
+    height: fit-content;
   }
 }
 @media screen and (max-width: 370px){

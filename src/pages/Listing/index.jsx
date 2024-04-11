@@ -28,9 +28,10 @@ export default function ListingPage() {
           <div className="w-full">
           <img src="images/pipo.svg" className="wider"></img>
           <div className="abs">
-            <h1>
-          A recognized leader in <br></br>Services Industry
+            <h1 className="abs1">
+            Unlock unparalleled real estate <br></br>solutions tailored to your needs.
           </h1>
+          <p className="abs2">Discover a comprehensive suite of real estate services meticulously crafted to cater <br></br>to your unique needs and aspirations.From expert property <br></br>management to seamless transactions, we are your trusted partner every step of the way, ensuring unparalleled satisfaction and success in your real estate endeavors.</p>
           </div>
           </div>
           <h1 className="cp">Elite Services</h1>
@@ -53,18 +54,23 @@ export default function ListingPage() {
               </div>
             </div>
             <div className="justify-center w-full gap-40 grid-cols-2 md:grid-cols-2 md:gap-5 sm:grid-cols-1 grid">
-              <div className="card1 flex flex-col items-center justify-start">
+              <div className="card1 flex flex-col items-center justify-start ms-12">
+                <br></br>
                 <h1 className="text-center pure">Property Management</h1>
-                <p className="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam adipisci quae debitis et voluptate sapiente odit labore deleniti soluta nobis, ullam modi sunt quidem eius id provident consequuntur esse atque?</p>
+                <br></br>
+                <p className="text-center paddd">Our property management service is the cornerstone of our commitment to excellence in real estate. With a keen eye for detail and a proactive approach, we handle every aspect of property management with precision and care. From tenant screening and lease agreements to maintenance and financial reporting, we ensure your property operates smoothly and efficiently. Our dedicated team is equipped with the expertise and resources to maximize your investment's potential while providing tenants with a with a superior living experience. Trust us to safeguard your property and elevate its value, allowing you to enjoy peace of mind and optimal returns.</p>
                 <div className="justify center items-center">
+                  <br></br>
                 <Button shape="round" className="mb-[23px] sm:px-5 font-semibold min-w-[138px] sm:min-w-full">
                 Get Started
               </Button>
               </div>
               </div>
               <div className="card1 flex flex-col items-center justify-start">
+                <br></br>
               <h1 className="text-center pure">Property Buy & Sell</h1>
-              <p className="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam adipisci quae debitis et voluptate sapiente odit labore deleniti soluta nobis, ullam modi sunt quidem eius id provident consequuntur esse atque?</p>
+              <br></br>
+              <p className="text-center paddd">Embark on a seamless journey of buying and selling properties with our expert guidance and unparalleled support.  we offer comprehensive services tailored to your specific needs. From market analysis and property valuation to negotiation and closing, our experienced team is dedicated to maximizing your returns and simplifying the transaction process. Trust us to navigate the complexities of the real estate market with precision and and integrity, ensuring a smooth and successful experience from start to finish.With our commitment to excellence and personalized attention, your property transactions are in capable hands, empowering you to achieve your real estate goals with confidence.</p>
                 <div className="justify center items-center">
                 <Button shape="round" className="mb-[23px] sm:px-5 font-semibold min-w-[138px] sm:min-w-full">
                 Get Started
