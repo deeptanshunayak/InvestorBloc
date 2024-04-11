@@ -25,8 +25,14 @@ export default function ListingPage() {
         <div className="flex flex-col items-center justify-start w-full gap-[20px]">
         <img src="images/logo (2).svg" alt="logo" className="zoome"></img>
           <Header className="flex justify-center items-center w-full md:h-auto p-[11px] bg" />
-          <img src="images/piner.png" className="wider"></img>
-          
+          <div className="w-full">
+          <img src="images/pipo.svg" className="wider"></img>
+          <div className="abs">
+            <h1>
+          A recognized leader in <br></br>Services Industry
+          </h1>
+          </div>
+          </div>
           <h1 className="cp">Elite Services</h1>
           <div className="flex flex-row justify-center w-full">
           <div className="flex flex-col items-center justify-start h-[700px] w-full md:h-auto gap-[53px] md:px-5 max-w-[1200px]">

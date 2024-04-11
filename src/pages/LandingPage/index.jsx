@@ -10,7 +10,7 @@ export default function LandingPagePage() {
   useEffect(() => {
     const intervalId = setInterval(() => {
         setCurrentImage(images[Math.floor(Math.random() * images.length)]);
-    }, 800)
+    }, 2000)
     
     return () => clearInterval(intervalId);
 }, []);
@@ -43,7 +43,7 @@ export default function LandingPagePage() {
                
               </div>
               <div className="flex flex-row justify-start">
-                <Img src={currentImage} alt="image_one" className="w-[89%] md:h-auto sm:w-full object-cover"/>
+                <Img src={currentImage} alt="image_one" className="w-[89%] md:h-auto sm:w-full object-cover fade-init"/>
                
                 
               </div>
@@ -61,9 +61,11 @@ export default function LandingPagePage() {
                   Lorem Ipsum is simply dummy text of the printing and typesetting industry.{" "}
                 </Text>
               </div>
+              <a href="/Elite">
               <Button shape="round" className="mb-[23px] sm:px-5 font-semibold min-w-[138px] sm:min-w-full">
                 Get Started
               </Button>
+              </a>
             </div>
             <div className="w-[49%] md:w-full gap-6 grid-cols-2 sm:grid-cols-1 sm:gap-5 grid">
               <div className="flex flex-col items-start justify-center w-full md:h-auto gap-5 p-[30px] sm:p-5 bg-deep_orange-50 rounded-[20px]">
@@ -174,7 +176,9 @@ export default function LandingPagePage() {
                     <Heading size="md" as="h3" className="mt-0.5 !text-orange-A700">
                       Explore All
                     </Heading>
+                    <a href="/propertydetails">
                     <Img src="images/img_icon_24px_v.svg" alt="icon24pxv_one" className="h-[24px] w-[24px]" />
+                    </a>
                   </div>
                 </div>
                 

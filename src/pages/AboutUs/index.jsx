@@ -8,22 +8,25 @@ export default function AboutUsPage() {
   return (
     <>
       <Helmet>
-        <title>Deeptanshu's Application2</title>
+        <title>Investorbloc</title>
         <meta name="description" content="Web site created using create-react-app" />
       </Helmet>
-      <div className="flex flex-col items-center justify-start w-full gap-[100px] bg-white-A700">
+      <div className="flex flex-col items-center justify-start w-full gap-[50px] bg">
+        
+      <img src="images/logo (2).svg" alt="logo" className="zoome"></img>
+     
         <Header className="flex justify-center items-center w-full md:h-auto p-[19px] bg" />
         <div className="flex flex-col items-center justify-start w-full gap-[100px]">
           <div className="flex flex-row justify-center w-full">
             <div className="flex flex-col items-center justify-start w-full gap-[38px] md:px-5 max-w-[1200px]">
               <div className="flex flex-col items-center justify-start w-full gap-4">
-                <Heading size="6xl" as="h1" className="tracking-[-1.08px] text-center">
+                <Heading size="6xl" as="h1" className="tracking-[-1.08px] text-center pim">
                   <>
                     Reimagining real estate to <br />
                     make it easier to unlock.
                   </>
                 </Heading>
-                <Text as="p" className="text-center">
+                <Text as="p" className="text-center pim">
                   <>
                     On the other hand, we denounce with righteous indignation and dislike men who <br />
                     are so beguiled and demoralized by the charms of pleasure of the moment, <br />
@@ -116,14 +119,20 @@ export default function AboutUsPage() {
               </div>
             </div>
           </div>
-          <div className="flex flex-row justify-start w-full pl-[120px] pr-14 md:px-5">
+          <div className="flex flex-row justify-start w-full pl-[120px] pr-14 md:px-5 view">
+         
             <div className="flex flex-row md:flex-col justify-between items-center w-full mx-auto md:gap-10 max-w-[1147px]">
+            <Img
+                src="images/founder.svg"
+                alt="image_four"
+                className="w-[47%] md:w-full md:h-[589px] object-cover rounded-[10px]"
+              />
               <div className="flex flex-col items-center justify-start w-[47%] md:w-full gap-14">
                 <div className="flex flex-col items-start justify-start w-full gap-[18px]">
-                  <Heading size="4xl" as="h2" className="tracking-[-0.72px]">
+                  <Heading size="4xl" as="h2" className="tracking-[-0.72px] pim">
                     A note from our founders.
                   </Heading>
-                  <Text as="p">
+                  <Text as="p" className="pim">
                     Lorem Ipsum is simply dummy text of the printing and typesetting industry. In a free hour,
                   </Text>
                 </div>
@@ -131,10 +140,10 @@ export default function AboutUsPage() {
                   <div className="flex flex-row sm:flex-col justify-start items-start w-full gap-[26px] sm:gap-5">
                     
                     <div className="flex flex-col items-start justify-start w-[89%] sm:w-full gap-4">
-                      <Heading size="4xl" as="h2" className="tracking-[-0.72px]">
+                      <Heading size="4xl" as="h2" className="tracking-[-0.72px] pim">
                         Our Vision is Simple
                       </Heading>
-                      <Text as="p">
+                      <Text as="p" className="pim">
                         Lorem Ipsum is simply dummy text of the printing and typesetting industry. In a free hour, On
                         the other hand, we denounce with righteous indignation and dislike men who are so beguiled and
                         demoralized by the charms of pleasure of the moment.
@@ -142,7 +151,7 @@ export default function AboutUsPage() {
                     </div>
                   </div>
                   <div className="flex flex-col items-start justify-center w-full gap-[9px]">
-                  <Heading size="lg" as="h3" className="tracking-[-0.40px]">
+                  <Heading size="lg" as="h3" className="tracking-[-0.40px] pim">
                   Parveen Raghav
                   </Heading>
                   
@@ -150,13 +159,51 @@ export default function AboutUsPage() {
                   
                 </div>
               </div>
-              <Img
-                src="images/founder.svg"
-                alt="image_four"
-                className="w-[47%] md:w-full md:h-[589px] object-cover rounded-[10px]"
-              />
+             
             </div>
           </div>
+          <div className="flex flex-row justify-start w-full pl-[120px] pr-14 md:px-5 view1">
+            .<div className="flex flex-row md:flex-col justify-between items-center w-full mx-auto md:gap-10 max-w-[1147px] order-1">
+            <Img
+                src="images/founder.svg"
+                alt="image_four"
+                className="w-[47%] md:w-full md:h-[589px] object-cover rounded-[10px] order-1"
+              />
+              <div className="flex flex-col items-center justify-start w-[47%] md:w-full gap-14">
+                <div className="flex flex-col items-start justify-start w-full gap-[18px]">
+                  <Heading size="4xl" as="h2" className="tracking-[-0.72px] pim">
+                    A note from our founders.
+                  </Heading>
+                  <Text as="p" className="pim">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. In a free hour,
+                  </Text>
+                </div>
+                <div className="flex flex-col w-full gap-[30px]">
+                  <div className="flex flex-row sm:flex-col justify-start items-start w-full gap-[26px] sm:gap-5">
+                    
+                    <div className="flex flex-col items-start justify-start w-[89%] sm:w-full gap-4">
+                      <Heading size="4xl" as="h2" className="tracking-[-0.72px] pim">
+                        Our Vision is Simple
+                      </Heading>
+                      <Text as="p" className="pim">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. In a free hour, On
+                        the other hand, we denounce with righteous indignation and dislike men who are so beguiled and
+                        demoralized by the charms of pleasure of the moment.
+                      </Text>
+                    </div>
+                  </div>
+                  <div className="flex flex-col items-start justify-center w-full gap-[9px]">
+                  <Heading size="lg" as="h3" className="tracking-[-0.40px] pim">
+                  Parveen Raghav
+                  </Heading>
+                  
+                </div>
+                  
+                </div>
+              </div>
+              
+            </div>
+          .</div>
           <div className="flex flex-row justify-end w-full pl-14 pr-[120px] md:px-5">
             <div className="flex flex-row md:flex-col justify-between items-center w-full mx-auto md:gap-10 max-w-[1150px]">
               <Img
@@ -166,10 +213,10 @@ export default function AboutUsPage() {
               />
               <div className="flex flex-col items-center justify-start w-[44%] md:w-full gap-14">
                 <div className="flex flex-col items-start justify-start w-full pt-[5px] gap-3.5">
-                  <Heading size="4xl" as="h2" className="tracking-[-0.72px]">
+                  <Heading size="4xl" as="h2" className="tracking-[-0.72px] pim">
                     Our vision is simple.
                   </Heading>
-                  <Text as="p">
+                  <Text as="p" className="pim">
                     <>
                       Lorem Ipsum is simply dummy text of the printing and typesetting industry. In a free hour, On the
                       other hand, we denounce with righteous indignation and dislike men who are so beguiled and
@@ -180,7 +227,7 @@ export default function AboutUsPage() {
                   </Text>
                 </div>
                 <div className="flex flex-col items-start justify-center w-full gap-[9px]">
-                  <Heading size="lg" as="h3" className="tracking-[-0.40px]">
+                  <Heading size="lg" as="h3" className="tracking-[-0.40px] pim">
                   Jaberjeet Khatana
                   </Heading>
                   

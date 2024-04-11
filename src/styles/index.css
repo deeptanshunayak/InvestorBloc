@@ -12,13 +12,20 @@ body {
 .wider{
   width: 100%;
   height: 60%;
+  opacity: 0.6;
 }
-
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
 .fade-in{ animation: fadeIn 5s; }
 @keyframes fadeIn {
   0% { opacity: 0; }
   100% { opacity: 1; }
 }
+
+
 .zoome{animation: zoomed 3s;}
 @keyframes zoomed {
   0%{
@@ -26,8 +33,8 @@ body {
     width: 100%;
   }
   100%{
-    height: 20%;
-    width: 20%;
+    height: 250px;
+    width: 250px;
   }
 }
 
@@ -56,10 +63,17 @@ a:hover{
   color: #C5A052;
 }
 .card1{
-  width: 398px;
-  height: 465px;
-  border-radius: 8px;
+  width: fit-content;
+  height: 500px;
+  border-radius: 12px;
   background-color: #FFE0CE;
+ 
+}
+.view{
+  display: none;
+}
+.view1{
+  display: block;
 }
 .pure{
   font-size: 30px;
@@ -95,8 +109,24 @@ a:hover{
 .padd1{
   padding-bottom: 18rem;
 }
+.pim{
+  color: #fff;
+}
 .c4{
   color: #FFE0CE;
+}
+.opcer{
+  opacity: 0.6;
+}
+.abs{
+  position: absolute;
+  top: 70%;
+  left: 0;
+  color: #FFD47E;
+  font-size: 58px;
+  padding-left: 50px;
+  font-family: "Orbitron", sans-serif;
+  font-weight: 900;
 }
 ul {
   margin: 0;
@@ -141,6 +171,7 @@ input:focus {
     opacity: 1;
   }
 }
+
 @media screen and (max-width: 600px){
   .c3{
     font-size: 14px;
@@ -149,7 +180,7 @@ input:focus {
     padding-bottom:1rem ;
   }
   .card1{
-    width: 370px;
+    width: fit-content;
     height: 400px;
   }
   .cp{
@@ -157,6 +188,22 @@ input:focus {
     font-family: "Orbitron", sans-serif;
     font-size: 20px;
     font-weight: bold;
+  }
+  .view{
+    display: block;
+  }
+  .view1{
+    display: none;
+  }
+  .abs{
+    position: absolute;
+    top: 47%;
+    left: 0;
+    color: #FFD47E;
+    font-size: 18px;
+    padding-left: 50px;
+    font-family: "Orbitron", sans-serif;
+    font-weight: 900;
   }
 }
 @media screen and (max-width: 370px){
