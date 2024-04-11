@@ -9,6 +9,10 @@ body {
   font-family: inherit;
   margin: unset;
 }
+.wider{
+  width: 100%;
+  height: 60%;
+}
 
 .fade-in{ animation: fadeIn 5s; }
 @keyframes fadeIn {
@@ -51,6 +55,16 @@ a {
 a:hover{
   color: #C5A052;
 }
+.card1{
+  width: 398px;
+  height: 465px;
+  border-radius: 8px;
+  background-color: #FFE0CE;
+}
+.pure{
+  font-size: 30px;
+  font-weight: 800;
+}
 .bg{
   background-color: #191919;
 }
@@ -58,6 +72,12 @@ a:hover{
   color: #C5A052;
   font-family: "Orbitron", sans-serif;
   font-size: 30px;
+}
+.cp{
+  color: #C5A052;
+  font-family: "Orbitron", sans-serif;
+  font-size: 40px;
+  font-weight: bold;
 }
 .c2{
   color: #fff;
@@ -127,6 +147,16 @@ input:focus {
   }
   .padd1{
     padding-bottom:1rem ;
+  }
+  .card1{
+    width: 370px;
+    height: 400px;
+  }
+  .cp{
+    color: #C5A052;
+    font-family: "Orbitron", sans-serif;
+    font-size: 20px;
+    font-weight: bold;
   }
 }
 @media screen and (max-width: 370px){

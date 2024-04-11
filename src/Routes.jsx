@@ -21,7 +21,7 @@ const ProjectRoutes = () => {
       element: <AboutUs />,
     },
     {
-      path: "/listing",
+      path: "/Elite",
       element: <Listing />,
     },
     {

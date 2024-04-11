@@ -204,7 +204,7 @@ export default function LandingPagePage() {
               />
             </div>
           </div>
-        </div>
+        .</div>
         <div className="flex flex-col items-center justify-center w-full px-14 py-[120px] md:p-5 bg-gray-50_01">
           <div className="flex flex-col items-center justify-start w-full gap-[150px] max-w-[1200px]">
             <div className="flex flex-row md:flex-col justify-between items-center w-full md:gap-10">
@@ -226,7 +226,7 @@ export default function LandingPagePage() {
               <div className="flex flex-row sm:flex-col justify-start w-[47%] md:w-full gap-5 sm:gap-5">
                 <div className="flex flex-col items-center justify-start w-[49%] sm:w-full gap-4">
                   <Img
-                    src="images/img_rectangle_18.png"
+                    src="images/mahal1.svg"
                     alt="image_two"
                     className="w-full md:h-auto sm:w-full object-cover rounded-[10px]"
                   />
@@ -238,7 +238,7 @@ export default function LandingPagePage() {
                 </div>
                 <div className="flex flex-col items-center justify-start w-[49%] sm:w-full gap-4">
                   <Img
-                    src="images/img_rectangle_19.png"
+                    src="images/mahal2.svg"
                     alt="image_four"
                     className="w-full md:h-auto sm:w-full object-cover rounded-[10px]"
                   />
@@ -252,7 +252,7 @@ export default function LandingPagePage() {
             </div>
             <div className="flex flex-row md:flex-col justify-between items-center w-full md:gap-10">
               <Img
-                src="images/img_rectangle_20_589x521.png"
+                src="images/mahal.svg"
                 alt="image_six"
                 className="w-[44%] md:w-full md:h-[589px] object-cover rounded-[10px]"
               />

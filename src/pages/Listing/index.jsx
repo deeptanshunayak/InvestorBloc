@@ -3,7 +3,7 @@ import { Helmet } from "react-helmet";
 import { CloseSVG } from "../../assets/images";
 import { Button, Img, GoogleMap, SelectBox, Input, Heading } from "../../components";
 import Footer from "../../components/Footer";
-import Header1 from "../../components/Header1";
+import Header from "../../components/Header";
 import LandingPageCard from "../../components/LandingPageCard";
 
 const dropDownOptions = [
@@ -18,223 +18,115 @@ export default function ListingPage() {
   return (
     <>
       <Helmet>
-        <title>Deeptanshu's Application2</title>
+        <title>Investorbloc</title>
         <meta name="description" content="Web site created using create-react-app" />
       </Helmet>
-      <div className="flex flex-col items-center justify-start w-full gap-[100px] overflow-auto bg-gray-50_01">
-        <div className="flex flex-col items-center justify-start w-full gap-[60px]">
-          <Header1 className="flex justify-center items-center w-full md:h-auto p-[19px] bg-white-A700" />
+      <div className="flex flex-col items-center justify-start w-full gap-[100px] overflow-auto bg">
+        <div className="flex flex-col items-center justify-start w-full gap-[20px]">
+        <img src="images/logo (2).svg" alt="logo" className="zoome"></img>
+          <Header className="flex justify-center items-center w-full md:h-auto p-[11px] bg" />
+          <img src="images/piner.png" className="wider"></img>
+          
+          <h1 className="cp">Elite Services</h1>
           <div className="flex flex-row justify-center w-full">
-            <div className="flex flex-col items-start justify-start w-full pt-[5px] gap-[18px] md:px-5 max-w-[1200px]">
-              <Heading size="4xl" as="h1" className="tracking-[-0.72px]">
-                Find Property
-              </Heading>
-              <div className="flex flex-col items-center justify-start w-full gap-3">
-                <div className="flex flex-row md:flex-col justify-start w-full gap-5">
-                  <Input
-                    shape="round"
-                    name="search"
-                    placeholder="Enter your address"
-                    value={searchBarValue8}
-                    onChange={(e) => setSearchBarValue8(e)}
-                    suffix={
-                      searchBarValue8?.length > 0 ? (
-                        <CloseSVG onClick={() => setSearchBarValue8("")} height={24} width={24} fillColor="#626262ff" />
-                      ) : (
-                        <Img
-                          src="images/img_icon_24px_search_gray_700.svg"
-                          alt="icon / 24px / search"
-                          className="cursor-pointer"
-                        />
-                      )
-                    }
-                    className="w-[36%] md:w-full gap-[35px] !text-gray-700 font-semibold border-blue_gray-100_01 border border-solid"
-                  />
-                  <SelectBox
-                    shape="round"
-                    indicator={<Img src="images/img_arrowdown_gray_700.svg" alt="arrow_down" />}
-                    name="active"
-                    placeholder="Buy"
-                    options={dropDownOptions}
-                    className="w-[9%] md:w-full gap-px font-bold border-blue_gray-100_01 border border-solid"
-                  />
-                  <SelectBox
-                    shape="round"
-                    indicator={<Img src="images/img_arrowdown_gray_700.svg" alt="arrow_down" />}
-                    name="price"
-                    placeholder="$15000 - $18000"
-                    options={dropDownOptions}
-                    className="w-[18%] md:w-full gap-px font-bold border-blue_gray-100_01 border border-solid"
-                  />
-                  <SelectBox
-                    shape="round"
-                    indicator={<Img src="images/img_arrowdown_gray_700.svg" alt="arrow_down" />}
-                    name="pressed"
-                    placeholder="Bed - 3"
-                    options={dropDownOptions}
-                    className="w-[11%] md:w-full gap-px font-bold border-blue_gray-100_01 border border-solid"
-                  />
-                  <Button
-                    color="white_A700"
-                    size="4xl"
-                    shape="round"
-                    rightIcon={<Img src="images/img_icon_24px_plus.svg" alt="icon / 24px / plus" />}
-                    className="gap-3 text-gray-700 font-bold border-blue_gray-100_01 border border-solid min-w-[113px]"
-                  >
-                    More
-                  </Button>
-                  <Button
-                    size="4xl"
-                    shape="round"
-                    rightIcon={<Img src="images/img_icon_20px_search.svg" alt="icon / 20px / search" />}
-                    className="gap-2.5 font-bold min-w-[124px]"
-                  >
-                    Search
-                  </Button>
+          <div className="flex flex-col items-center justify-start h-[700px] w-full md:h-auto gap-[53px] md:px-5 max-w-[1200px]">
+            <div className="flex flex-row justify-center w-full pt-[5px]">
+              <div className="flex flex-col items-center justify-start w-full gap-[17px]">
+                <div className="flex flex-row sm:flex-col justify-between items-start w-full sm:gap-10">
+                  <Heading size="4xl" as="h2" className="tracking-[-0.72px] c4">
+                    
+                  </Heading>
+                  <div className="flex flex-row justify-start items-center mt-[7px] gap-2 sm:mt-0">
+                    <Heading size="md" as="h3" className="mt-0.5 !text-orange-A700">
+                      
+                    </Heading>
+                    
+                  </div>
                 </div>
-                <div className="flex flex-row md:flex-col justify-start w-full gap-2.5 md:gap-5">
-                  <Button
-                    color="blue_gray_100"
-                    size="md"
-                    variant="outline"
-                    shape="round"
-                    rightIcon={<Img src="images/img_icon_16px_close.svg" alt="icon / 16px / close" />}
-                    className="gap-2 font-semibold min-w-[145px]"
-                  >
-                    Bathrooms 2+
-                  </Button>
-                  <Button
-                    color="blue_gray_100"
-                    size="md"
-                    variant="outline"
-                    shape="round"
-                    rightIcon={<Img src="images/img_icon_16px_close.svg" alt="icon / 16px / close" />}
-                    className="gap-2 font-semibold min-w-[243px]"
-                  >
-                    Square Feet 750 - 2000 sq. ft
-                  </Button>
-                  <Button
-                    color="blue_gray_100"
-                    size="md"
-                    variant="outline"
-                    shape="round"
-                    rightIcon={<Img src="images/img_icon_16px_close.svg" alt="icon / 16px / close" />}
-                    className="gap-2 font-semibold min-w-[151px]"
-                  >
-                    Year Built 5 - 15
-                  </Button>
-                  <Button
-                    color="blue_gray_100"
-                    size="md"
-                    variant="outline"
-                    shape="round"
-                    rightIcon={<Img src="images/img_icon_16px_close.svg" alt="icon / 16px / close" />}
-                    className="gap-2 !text-gray-900 font-semibold min-w-[168px]"
-                  >
-                    For Sale By Agent
-                  </Button>
-                  <Button
-                    color="blue_gray_100"
-                    size="md"
-                    variant="outline"
-                    shape="round"
-                    rightIcon={<Img src="images/img_icon_16px_close.svg" alt="icon / 16px / close" />}
-                    className="gap-2 !text-gray-900 font-semibold min-w-[174px]"
-                  >
-                    New Construction
-                  </Button>
-                </div>
+                
+              </div>
+            </div>
+            <div className="justify-center w-full gap-40 grid-cols-2 md:grid-cols-2 md:gap-5 sm:grid-cols-1 grid">
+              <div className="card1 flex flex-col items-center justify-start">
+                <h1 className="text-center pure">Property Management</h1>
+                <p className="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam adipisci quae debitis et voluptate sapiente odit labore deleniti soluta nobis, ullam modi sunt quidem eius id provident consequuntur esse atque?</p>
+                <div className="justify center items-center">
+                <Button shape="round" className="mb-[23px] sm:px-5 font-semibold min-w-[138px] sm:min-w-full">
+                Get Started
+              </Button>
+              </div>
+              </div>
+              <div className="card1 flex flex-col items-center justify-start">
+              <h1 className="text-center pure">Property Buy & Sell</h1>
+              <p className="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam adipisci quae debitis et voluptate sapiente odit labore deleniti soluta nobis, ullam modi sunt quidem eius id provident consequuntur esse atque?</p>
+                <div className="justify center items-center">
+                <Button shape="round" className="mb-[23px] sm:px-5 font-semibold min-w-[138px] sm:min-w-full">
+                Get Started
+              </Button>
+              </div>
               </div>
             </div>
           </div>
-          <div className="flex flex-col items-center justify-start w-full">
-            <div className="flex flex-row md:flex-col justify-start items-start w-full gap-6 md:gap-5 md:px-5 max-w-[1200px]">
-              <GoogleMap showMarker={false} className="h-[511px] w-[32%]" />
-              <div className="flex flex-col items-center justify-start w-[66%] md:w-full gap-[60px]">
-                <div className="flex flex-col items-center justify-start w-full">
-                  <div className="justify-center w-full gap-6 grid-cols-2 md:grid-cols-1 md:gap-5 grid">
-                    <LandingPageCard className="flex flex-col items-center justify-start w-full" />
-                    <LandingPageCard
-                      imageOne="images/img_image_1.png"
-                      className="flex flex-col items-center justify-start w-full"
-                    />
-                    <LandingPageCard
-                      imageOne="images/img_image_3.png"
-                      className="flex flex-col items-center justify-start w-full"
-                    />
-                    <LandingPageCard
-                      imageOne="images/img_image_4.png"
-                      className="flex flex-col items-center justify-start w-full"
-                    />
-                    <LandingPageCard
-                      imageOne="images/img_image_5.png"
-                      className="flex flex-col items-center justify-start w-full"
-                    />
-                    <LandingPageCard
-                      imageOne="images/img_image_2.png"
-                      className="flex flex-col items-center justify-start w-full"
-                    />
-                    <LandingPageCard
-                      imageOne="images/img_image_1.png"
-                      className="flex flex-col items-center justify-start w-full"
-                    />
-                    <LandingPageCard
-                      imageOne="images/img_image_3.png"
-                      className="flex flex-col items-center justify-start w-full"
-                    />
-                  </div>
-                </div>
-                <div className="flex flex-row sm:flex-col justify-between w-full sm:gap-10">
-                  <div className="flex flex-row justify-start gap-[5px]">
-                    <Button color="gray_700" variant="outline" shape="round" className="font-semibold min-w-[48px]">
-                      1
-                    </Button>
-                    <Button
-                      color="blue_gray_100_02"
-                      variant="outline"
-                      shape="round"
-                      className="font-semibold min-w-[48px]"
-                    >
-                      2
-                    </Button>
-                    <Button
-                      color="blue_gray_100_02"
-                      variant="outline"
-                      shape="round"
-                      className="font-semibold min-w-[48px]"
-                    >
-                      3
-                    </Button>
-                    <Button
-                      color="blue_gray_100_02"
-                      variant="outline"
-                      shape="round"
-                      className="font-semibold min-w-[48px]"
-                    >
-                      4
-                    </Button>
-                    <Button
-                      color="blue_gray_100_02"
-                      variant="outline"
-                      shape="round"
-                      className="font-semibold min-w-[48px]"
-                    >
-                      5
-                    </Button>
-                  </div>
-                  <Button
-                    color="blue_gray_100_02"
-                    variant="outline"
-                    shape="round"
-                    rightIcon={<Img src="images/img_icon_16px_arrow_right.svg" alt="icon / 16px / arrow - right" />}
-                    className="gap-1 font-semibold min-w-[134px]"
-                  >
-                    Next Page
-                  </Button>
-                </div>
+        .</div>
+          <div className="flex flex-row md:flex-col w-full gap-[100px] p-[50px] md:gap-10 md:p-5 bg-gray-50">
+            <div className="flex flex-col items-start justify-start w-[7%] md:w-full ml-[70px] gap-[18px] md:ml-5">
+             
+              <div className="flex flex-col items-start justify-start w-full gap-[13px]">
+                <Heading size="5xl" as="h2" className="tracking-[-0.92px]">
+                 
+                </Heading>
+                <Heading size="lg" as="h3" className="!text-blue_gray-600 tracking-[-0.40px]">
+                  <>
+                    
+                  </>
+                </Heading>
               </div>
             </div>
-          </div>
+            
+            <div className="flex flex-col items-start justify-start w-[17%] md:w-full gap-[18px]">
+              <Button color="white_A700" size="3xl" shape="circle" className="w-[60px]">
+                <Img src="images/img_frame_orange_a700.svg" />
+              </Button>
+              <div className="flex flex-col items-start justify-start w-full gap-[13px]">
+                <Heading size="5xl" as="h4" className="tracking-[-0.92px]">
+                  1000+
+                </Heading>
+                <Heading size="lg" as="h5" className="!text-blue_gray-600 tracking-[-0.40px]">
+                  Properties for Buy & sell Successfully
+                </Heading>
+              </div>
+            </div>
+            
+            <div className="flex flex-col items-start justify-start w-[17%] md:w-full gap-[18px]">
+              <Button color="white_A700" size="3xl" shape="circle" className="w-[60px]">
+                <Img src="images/img_icon.svg" />
+              </Button>
+              <div className="flex flex-col items-start justify-start w-full gap-[13px]">
+                <Heading size="5xl" as="h6" className="tracking-[-0.92px]">
+                  50
+                </Heading>
+                <Heading size="lg" as="h5" className="!text-blue_gray-600 tracking-[-0.40px]">
+                  <>
+                    Daily completed <br />
+                    transactions
+                  </>
+                </Heading>
+              </div>
+            </div>
+            <div className="flex flex-col items-start justify-start w-[17%] md:w-full mb-[26px] mr-[70px] gap-[18px] md:mr-5">
+              <Button color="white_A700" size="3xl" shape="circle" className="w-[60px]">
+                <Img src="images/img_icon_orange_a700.svg" />
+              </Button>
+              <div className="flex flex-col items-start justify-start w-full gap-4">
+                <Heading size="5xl" as="h1" className="tracking-[-0.92px]">
+                  100+
+                </Heading>
+                <Heading size="lg" as="h5" className="!text-blue_gray-600 tracking-[-0.40px]">
+                  Reagular Clients
+                </Heading>
+              </div>
+            </div>
+          .</div>
         </div>
         <Footer className="flex justify-center items-center w-full pl-[74px] pr-14 gap-[115px] py-[74px] md:p-5 bg-white-A700" />
       </div>

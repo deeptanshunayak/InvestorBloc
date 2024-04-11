@@ -51,7 +51,7 @@ export default function AboutUsPage() {
                     className="w-[32%] md:h-auto sm:w-full object-cover rounded-[10px]"
                   />
                   <Img
-                    src="images/img_rectangle_5594.png"
+                    src="images/Villa.png"
                     alt="image_three"
                     className="w-[66%] md:h-auto sm:w-full object-cover rounded-[10px]"
                   />
