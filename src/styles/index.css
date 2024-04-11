@@ -24,6 +24,12 @@ body {
   0% { opacity: 0; }
   100% { opacity: 1; }
 }
+.fader{ animation: fade 3s infinite;
+transition: 3s; }
+@keyframes fade {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
 
 
 .zoome{animation: zoomed 3s;}

@@ -43,7 +43,7 @@ export default function LandingPagePage() {
                
               </div>
               <div className="flex flex-row justify-start">
-                <Img src={currentImage} alt="image_one" className="w-[89%] md:h-auto sm:w-full object-cover fade-init"/>
+                <Img src={currentImage} alt="image_one" className="w-[89%] md:h-auto sm:w-full object-cover fade-init fader"/>
                
                 
               </div>
@@ -58,10 +58,10 @@ export default function LandingPagePage() {
                   Simple & easy way to find your dream Appointment
                 </Heading>
                 <Text as="p" className="!text-gray-900 fade-in">
-                  Lorem Ipsum is simply dummy text of the printing and typesetting industry.{" "}
+                Discover your dream property effortlessly with our intuitive appointment scheduler, streamlining your search process on our real estate website.
                 </Text>
               </div>
-              <a href="/Elite">
+              <a href="#doom">
               <Button shape="round" className="mb-[23px] sm:px-5 font-semibold min-w-[138px] sm:min-w-full">
                 Get Started
               </Button>
@@ -218,9 +218,7 @@ export default function LandingPagePage() {
                     Simple & easy way to find your dream Appointment
                   </Heading>
                   <Text as="p">
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. In a free hour, when our
-                    power of choice is untrammelled and when nothing prevents our being able to do what we like best,
-                    every pleasure is to be welcomed.
+                  Finding your dream appointment is as easy as a few clicks away. Our intuitive search feature lets you filter through a wide range of properties, ensuring you find the one that perfectly fits your needs and desires. With detailed listings and helpful resources, your dream appointment is closer than you think. Explore now and make your property dreams a reality.
                   </Text>
                 </div>
                 <Button shape="round" className="sm:px-5 font-semibold min-w-[138px] sm:min-w-full">
@@ -267,8 +265,7 @@ export default function LandingPagePage() {
                       Best rated host on popular rental sites
                     </Heading>
                     <Text as="p">
-                      Lorem Ipsum is simply dummy text of the printing and typesetting industry. In a free hour, when
-                      our power of choice is untrammelled.
+                    Uncover the highest-rated host on renowned rental websites, ensuring unparalleled service and satisfaction for your real estate ventures. Elevate your experience with our top-tier hosting partners.
                     </Text>
                   </div>
                   <div className="flex flex-col items-center justify-start w-full gap-3">
@@ -292,9 +289,11 @@ export default function LandingPagePage() {
                     </div>
                   </div>
                 </div>
+                <a href="/aboutus">
                 <Button shape="round" className="sm:px-5 font-semibold min-w-[134px] sm:min-w-full">
                   Learn more
                 </Button>
+                </a>
               </div>
             </div>
           </div>
@@ -303,7 +302,7 @@ export default function LandingPagePage() {
         <div className="flex flex-row justify-center w-full px-14 py-[120px] md:p-5 bg-gray-400">
           <div className="flex flex-col items-center justify-start w-full gap-[118px] max-w-[1200px]">
             
-            <div className="flex flex-col items-center justify-start w-full gap-[30px] p-10 sm:p-5 bg-gray-600_01 rounded-[10px]">
+            <div className="flex flex-col items-center justify-start w-full gap-[30px] p-10 sm:p-5 bg-gray-600_01 rounded-[10px]" id="doom">
               <div className="flex flex-col items-center justify-start w-[54%] md:w-full pt-[3px] gap-[5px]">
                 <Heading size="3xl" as="h3" className="tracking-[-0.56px] text-center">
                   For Recent Update, News.

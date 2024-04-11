@@ -28,9 +28,7 @@ export default function AboutUsPage() {
                 </Heading>
                 <Text as="p" className="text-center pim">
                   <>
-                    On the other hand, we denounce with righteous indignation and dislike men who <br />
-                    are so beguiled and demoralized by the charms of pleasure of the moment, <br />
-                    so blinded by desire, that they cannot foresee the pain and trouble.
+                  Experience a reimagined approach to real estate, crafted to effortlessly unlock the doors to your dreams. With innovative solutions and personalized service, we transform the journey into a delightful adventure, guiding you every step towards your perfect home. Let us redefine real estate for you, making it a joyous exploration filled with excitement and possibility.
                   </>
                 </Text>
               </div>
@@ -133,7 +131,7 @@ export default function AboutUsPage() {
                     A note from our founders.
                   </Heading>
                   <Text as="p" className="pim">
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. In a free hour,
+                  Embark on your real estate journey with us, where every step is guided by passion, expertise, and a commitment to exceeding your expectations.
                   </Text>
                 </div>
                 <div className="flex flex-col w-full gap-[30px]">
@@ -144,9 +142,7 @@ export default function AboutUsPage() {
                         Our Vision is Simple
                       </Heading>
                       <Text as="p" className="pim">
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. In a free hour, On
-                        the other hand, we denounce with righteous indignation and dislike men who are so beguiled and
-                        demoralized by the charms of pleasure of the moment.
+                      To revolutionize the real estate landscape by fostering meaningful connections between people and properties, empowering individuals to embark on unforgettable journeys of homeownership and investment. We strive to create a world where every dream finds its perfect address, where trust and transparency form the cornerstone of every transaction, and where excellence is the standard in everything we do.
                       </Text>
                     </div>
                   </div>
@@ -175,7 +171,7 @@ export default function AboutUsPage() {
                     A note from our founders.
                   </Heading>
                   <Text as="p" className="pim">
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. In a free hour,
+                  Embark on your real estate journey with us, where every step is guided by passion, expertise, and a commitment to exceeding your expectations.
                   </Text>
                 </div>
                 <div className="flex flex-col w-full gap-[30px]">
@@ -186,9 +182,7 @@ export default function AboutUsPage() {
                         Our Vision is Simple
                       </Heading>
                       <Text as="p" className="pim">
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. In a free hour, On
-                        the other hand, we denounce with righteous indignation and dislike men who are so beguiled and
-                        demoralized by the charms of pleasure of the moment.
+                      To revolutionize the real estate landscape by fostering meaningful connections between people and properties, empowering individuals to embark on unforgettable journeys of homeownership and investment. We strive to create a world where every dream finds its perfect address, where trust and transparency form the cornerstone of every transaction, and where excellence is the standard in everything we do.
                       </Text>
                     </div>
                   </div>
@@ -218,11 +212,7 @@ export default function AboutUsPage() {
                   </Heading>
                   <Text as="p" className="pim">
                     <>
-                      Lorem Ipsum is simply dummy text of the printing and typesetting industry. In a free hour, On the
-                      other hand, we denounce with righteous indignation and dislike men who are so beguiled and
-                      demoralized by the charms of pleasure of the moment.
-                      <br />
-                      In a free hour, On the other hand, we denounce with righteous indignation and dislike men .
+                    Our vision is to be the catalyst for positive change in the real estate industry, championing inclusivity, innovation, and environmental stewardship. We envision a future where every property transaction is infused with integrity, where diversity is celebrated, and where sustainability is at the forefront of every decision, creating enduring value for both present and future generations.
                     </>
                   </Text>
                 </div>
