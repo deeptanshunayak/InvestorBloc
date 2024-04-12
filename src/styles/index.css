@@ -189,6 +189,10 @@ input {
 input:focus {
   outline: none;
 }
+.back1{
+  background-image: url('/public/images/background.svg');
+ background-repeat: no-repeat;
+}
 .tab-panel--selected {
   animation-name: tabPanel;
   animation-duration: 300ms;

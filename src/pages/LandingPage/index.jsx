@@ -186,7 +186,7 @@ export default function LandingPagePage() {
                 
               </div>
             </div>
-            <div className="justify-center w-full gap-40 grid-cols-2 md:grid-cols-2 md:gap-5 sm:grid-cols-1 grid">
+            <div className="justify-center w-full gap-40 grid-cols-2 md:grid-cols-2 md:gap-5 sm:grid-cols-1 grid back1">
               <LandingPageCard className="flex flex-col items-center justify-start w-full" />
               <LandingPageCard
                 imageOne="images/img_image_3.png"
