@@ -25,7 +25,9 @@ export default function LandingPagePage() {
         <div className="flex flex-col items-center justify-start w-full">
         <img src="images/logo (2).svg" alt="logo" className="zoome"></img>
           <Header className="flex justify-center items-center w-full md:h-auto p-[11px] bg" />
+          <br></br>
           <div className="flex flex-row justify-end w-full py-[20px] md:py-5 bg">
+           <br></br>   
             <div className="flex flex-row md:flex-col justify-between items-center w-full mx-auto md:gap-10 md:px-3 max-w-[1396px]">
               <div className="flex flex-col items-center justify-start w-[44%] md:w-full gap-10">
                 <div className="flex flex-col items-center justify-start w-full gap-[15px]">
@@ -42,12 +44,14 @@ export default function LandingPagePage() {
                 </div>
                
               </div>
+              <br></br>
               <div className="flex flex-row justify-start back change">
                </div>
                <Img src={currentImage} alt="image_one" className="w-[89%] md:h-auto sm:w-full object-cover viewed" />
             </div>
           </div>
         </div>
+       
         <div className="flex flex-row justify-center w-full">
           <div className="flex flex-row md:flex-col justify-start w-full gap-6 md:gap-5 md:px-5 max-w-[1200px]">
             <div className="flex flex-col items-start justify-center w-[49%] md:h-auto gap-[49px] p-[50px] md:p-5 bg-red-100 rounded-[20px] sm:w-full">
@@ -343,7 +347,7 @@ export default function LandingPagePage() {
                     shape="round"
                     type="email"
                     name="email"
-                    placeholder="Select your Query"
+                    placeholder="Enter your Query"
                     className="w-[71%] md:w-full font-semibold"
                   />
                   <Button shape="round" className="sm:px-5 font-semibold min-w-[126px]">

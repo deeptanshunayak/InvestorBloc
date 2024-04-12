@@ -15,12 +15,12 @@ body {
   opacity: 0.6;
 }
 .back{
- 
+ margin-top: 70px;
   background-image: url('/public/images/layout.svg');
   background-repeat: no-repeat;
   width: 79%;
  
-  height: 120%;
+  height: 150%;
   
 }
 .slideshow-container {
@@ -68,6 +68,9 @@ transition: 3s; }
   50%{
    
     background-image: url('/public/images/img4.svg');
+  }
+  75%{
+    background-image: url('/public/images/img5.svg');
   }
   100%{
     background-image: url('/public/images/layout.svg');

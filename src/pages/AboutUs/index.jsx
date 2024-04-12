@@ -279,7 +279,7 @@ export default function AboutUsPage() {
                     shape="round"
                     type="email"
                     name="email"
-                    placeholder="Select your Query"
+                    placeholder="Enter your Query"
                     className="w-[71%] md:w-full font-semibold"
                   />
                   <Button shape="round" className="sm:px-5 font-semibold min-w-[126px]">
