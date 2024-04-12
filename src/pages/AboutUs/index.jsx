@@ -236,7 +236,7 @@ export default function AboutUsPage() {
                 </div>
                 
               </div>
-              <div className="flex flex-col items-center justify-start w-full gap-[30px] p-10 sm:p-5 bg-gray-400_01 rounded-[10px]">
+              <div className="flex flex-col items-center justify-start w-full gap-[30px] p-10 sm:p-5 bg-gray-400_01 rounded-[10px]" id="contact">
                 <div className="flex flex-col items-center justify-start w-[54%] md:w-full pt-[3px] gap-[5px]">
                   <Heading size="3xl" as="h3" className="tracking-[-0.56px]">
                     For Recent Update, News.
@@ -245,7 +245,7 @@ export default function AboutUsPage() {
                     We helps businesses customize, automate and scale up their ad production and delivery.
                   </Text>
                 </div>
-                <div className="flex flex-row sm:flex-col justify-start w-[99%] md:w-full gap-2 sm:gap-5">
+                <div className="flex flex-row sm:flex-col justify-start w-[99%] md:w-full gap-2 sm:gap-5" >
                   <Input
                     color="gray_50_02"
                     size="sm"
@@ -290,7 +290,85 @@ export default function AboutUsPage() {
             </div>
           </div>
         </div>
-        <Footer className="flex justify-center items-center w-full pl-[74px] pr-14 gap-[115px] py-[74px] md:p-5 bg-white-A700" />
+        <footer className="flex justify-center items-center w-full px-14 py-[44px] md:p-5 bg">
+          <div className="flex flex-col items-center justify-center w-full mt-[5px] gap-[5px] mx-auto max-w-[1200px]">
+            <div className="flex flex-row md:flex-col justify-start items-center w-full gap-px md:gap-5">
+              <div className="flex flex-col items-center justify-start w-[29%] md:w-full ">
+                <div className="flex flex-row justify-start items-start w-full gap-[1px]">
+                  <Img src="images/logo (2).svg" alt="realestateone" className="h-[240px] w-[240px] pr-8" />
+                 
+                </div>
+                <div className="flex flex-col items-start justify-start w-full gap-7">
+                  <Heading as="h6" className="!leading-[160%] pim pl-4">
+                    <>
+                      Faridabad,Haryana
+                      <br />
+                     
+                    </>
+                  </Heading>
+                  <div className="flex flex-col items-start justify-center gap-2">
+                    <Heading as="h6" className="mt-px pim pl-4">
+                    +91 84487 38225
+                    </Heading>
+                    <Heading as="h6" className="pim pl-4">info@mail.com</Heading>
+                  </div>
+                  <div className="flex flex-row justify-start w-full gap-3">
+                    <div className="flex flex-col items-center justify-start h-[30px] w-[30px]">
+                      <Img src="images/img_icon_facebook.svg" alt="iconfacebook" className="h-[30px] w-[30px]" />
+                    </div>
+                    <div className="flex flex-col items-center justify-start h-[30px] w-[30px]">
+                      <Img src="images/img_icon_twitter.svg" alt="icontwitter_one" className="h-[30px] w-[30px]" />
+                    </div>
+                    <Img src="images/img_icon_instragram.svg" alt="iconinstragram" className="h-[30px] w-[30px]" />
+                    <Img src="images/img_icon_linked_in.svg" alt="iconlinkedin" className="h-[30px] w-[30px]" />
+                    <div className="flex flex-col items-center justify-start h-[30px] w-[30px]">
+                      <Img src="images/img_icon_youtube.svg" alt="iconyoutube_one" className="h-[30px] w-[30px]" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="flex flex-row md:flex-col justify-between items-center w-[72%] md:w-full md:gap-10">
+                <div className="flex flex-col items-start justify-start w-[19%] md:w-full gap-[15px]">
+                  <Heading size="md" as="h6" className="pim">
+                    Pages
+                  </Heading>
+                  <div className="flex flex-col items-start justify-start w-full gap-[15px]">
+                    <Heading as="h6" className="pim">Home</Heading>
+                    <Heading as="h6" className="pim">About Us</Heading>
+                    <Heading as="h6" className="pim">Elite Serices</Heading>
+                    <Heading as="h6" className="pim">Contact Us</Heading>
+                   
+                  </div>
+                </div>
+                
+                <div className="flex flex-col items-start justify-start w-[19%] md:w-full gap-[15px]">
+                  <Heading size="md" as="h6" className="pim">
+                    Services{" "}
+                  </Heading>
+                  <div className="flex flex-col items-start justify-center w-full gap-[15px]">
+                    <Heading as="h6" className="mt-0.5 pim">
+                     property Buy and Sell
+                    </Heading>
+                    <Heading as="h6" className="pim">Property Management</Heading>
+                    <a href="#">
+                      <Heading as="h6" className="pim">Privacy Policy</Heading>
+                    </a>
+                    <Heading as="h6"></Heading>
+                  </div>
+                </div>
+                <div className="flex flex-col items-start justify-start w-[19%] md:w-full gap-[15px]">
+                  <Heading size="md" as="h6" className="pim">
+                  © 2022. All rights reserved.
+                  </Heading>
+                  <div className="flex flex-col items-start justify-center w-full gap-[15px]">
+                   
+                  </div>
+                </div>
+              </div>
+            </div>
+            <Heading as="h6"></Heading>
+          </div>
+        </footer>
       </div>
     </>
   );

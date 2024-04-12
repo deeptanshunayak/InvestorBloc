@@ -31,7 +31,7 @@ export default function Header({ ...props }) {
               
             </div>
             <div className="flex flex-row justify-center items-start w-[35%] ">
-              <Heading as="h6" className="c3 fade-in">< a href="">Contact Us</a></Heading>
+              <Heading as="h6" className="c3 fade-in">< a href="#contact">Contact Us</a></Heading>
               
             </div>
           </div>

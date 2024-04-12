@@ -14,6 +14,14 @@ body {
   height: 60%;
   opacity: 0.6;
 }
+.back{
+  background-image: url('/public/images/layout.svg');
+  background-repeat: no-repeat;
+  width: 89%;
+ 
+  height: 150%;
+  
+}
 .slideshow-container {
   max-width: 1000px;
   position: relative;
@@ -27,8 +35,8 @@ body {
 .fader{ animation: fade 3s infinite;
 transition: 3s; }
 @keyframes fade {
-  0% { opacity: 0; }
-  100% { opacity: 1; }
+  0% { left: -100px;}
+  100% { left: 0px; }
 }
 
 
@@ -45,20 +53,23 @@ transition: 3s; }
 }
 
 
-.change{animation: changer 10s;}
+.change{animation: changer 10s infinite;}
 @keyframes changer {
   0%{
   
-    background-image: url('/public/images/img2.svg');
+    background-image: url('/public/images/img3.svg');
     
   }
-  50%{
+  25%{
     background-image: url('/public/images/img1.svg');
    
   }
-  100%{
+  50%{
    
-    background-image: url('/public/images/img2.svg');
+    background-image: url('/public/images/img4.svg');
+  }
+  100%{
+    background-image: url('/public/images/layout.svg');
   }
 }
 
@@ -236,6 +247,7 @@ input:focus {
   }
   .wider{
     height: fit-content;
+    width: fit-content;
   }
 }
 @media screen and (max-width: 370px){
