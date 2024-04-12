@@ -15,11 +15,12 @@ body {
   opacity: 0.6;
 }
 .back{
+ 
   background-image: url('/public/images/layout.svg');
   background-repeat: no-repeat;
-  width: 89%;
+  width: 79%;
  
-  height: 150%;
+  height: 120%;
   
 }
 .slideshow-container {
