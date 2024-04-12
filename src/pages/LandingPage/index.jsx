@@ -4,7 +4,7 @@ import { Heading, Img, Text, Button, Input } from "../../components";
 import Header from "../../components/Header";
 import LandingPageCard from "../../components/LandingPageCard";
 
-const images =["images/layout.svg","images/img1.svg","images/img3.svg","images/img4.svg"];
+const images =["images/layout.svg","images/img5.svg","images/img1.svg"];
 export default function LandingPagePage() {
   const [currentImage, setCurrentImage] = useState(null);
   useEffect(() => {

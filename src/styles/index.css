@@ -210,7 +210,10 @@ input:focus {
   .c3{
     font-size: 14px;
   }
- 
+  .back{
+    margin-top: 10px;
+    display: none;
+  }
   .padd1{
     padding-bottom:1rem ;
   }
