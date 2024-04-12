@@ -206,6 +206,7 @@ input:focus {
   .c3{
     font-size: 14px;
   }
+ 
   .padd1{
     padding-bottom:1rem ;
   }
@@ -227,7 +228,7 @@ input:focus {
   }
   .abs{
     position: absolute;
-    top: 37%;
+    top: 42%;
     left: 0;
     color: #FFD47E;
     font-size: 18px;
@@ -236,14 +237,14 @@ input:focus {
     font-weight: 900;
   }
   .abs1{
-    font-size: 18px;
+    font-size: 12px;
   }
   .paddd{
     margin: 20px !important;
   }
   .abs2{
     color: #fff;
-    font-size: 14px;
+    font-size: 10px;
     font-weight: 400;
   }
   .wider{

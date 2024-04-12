@@ -43,10 +43,7 @@ export default function LandingPagePage() {
                
               </div>
               <div className="flex flex-row justify-start back change">
-               
-               
-                
-              </div>
+               </div>
             </div>
           </div>
         </div>
