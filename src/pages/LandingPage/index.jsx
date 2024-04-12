@@ -44,6 +44,7 @@ export default function LandingPagePage() {
               </div>
               <div className="flex flex-row justify-start back change">
                </div>
+               <Img src={currentImage} alt="image_one" className="w-[89%] md:h-auto sm:w-full object-cover viewed" />
             </div>
           </div>
         </div>

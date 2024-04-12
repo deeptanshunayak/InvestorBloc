@@ -193,6 +193,9 @@ input:focus {
   animation-duration: 300ms;
   animation-timing-function: linear;
 }
+.viewed{
+  display: none;
+}
 @keyframes tabPanel {
   from {
     opacity: 0;
@@ -209,6 +212,9 @@ input:focus {
  
   .padd1{
     padding-bottom:1rem ;
+  }
+  .viewed{
+    display: block;
   }
   .card1{
     width: fit-content;
