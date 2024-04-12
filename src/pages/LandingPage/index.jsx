@@ -322,6 +322,7 @@ export default function LandingPagePage() {
                     name="email"
                     placeholder="Enter your Name"
                     className="w-[70%] md:w-full font-semibold"
+                    
                   />
                   <Input
                     color="gray_50_02"

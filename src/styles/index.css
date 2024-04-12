@@ -69,9 +69,7 @@ transition: 3s; }
    
     background-image: url('/public/images/img4.svg');
   }
-  75%{
-    background-image: url('/public/images/img5.svg');
-  }
+  
   100%{
     background-image: url('/public/images/layout.svg');
   }
